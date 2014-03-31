@@ -8,4 +8,7 @@ with    'Search::Elasticsearch::Role::API',
 extends 'Search::Elasticsearch::Client::Direct';
 
 
+__PACKAGE__->_install_api('');
+
+
 1;
