@@ -11,8 +11,8 @@ with 'Search::Elasticsearch::Role::Transport',
 
 
 sub perform_request {
-	my $self   = shift();
-	my $cb     = pop();
+	my $self = shift();
+	my $cb   = pop();
 
 	my $pars = $self->tidy_request(@_);
 	my $pool = $self->cxn_pool;
@@ -26,8 +26,8 @@ sub perform_request {
 			return;
 		}
 
-		my ($cxn) = @_;
-		my $ts = time();
+		my $cxn = $_[0];
+		my $ts  = time();
 
 		$log->trace_request($cxn, $pars);
 		$cxn->perform_request($pars, sub {

@@ -12,14 +12,14 @@ our $VERSION = '0.01';
 
 
 sub new {
-	my ($class, $params) = parse_params(@_);
+	my ($class, $pars) = parse_params(@_);
 
 	return $class->SUPER::new({
 		client              => 'Direct::Async',
 		transport           => 'Async',
 		cxn_pool            => 'Static::Async',
 		cxn                 => 'AEHTTP',
-		%$params,
+		%$pars,
 	});
 }
 
