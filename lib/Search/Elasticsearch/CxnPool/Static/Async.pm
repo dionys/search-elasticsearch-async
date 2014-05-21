@@ -2,12 +2,12 @@ package Search::Elasticsearch::CxnPool::Static::Async;
 
 use Moo;
 
-with 'Search::Elasticsearch::Role::CxnPool::Static',
-     'Search::Elasticsearch::Role::Is_Async';
-
 use Search::Elasticsearch::Util qw(new_error);
 
 use namespace::clean;
+
+with 'Search::Elasticsearch::Role::CxnPool::Static',
+     'Search::Elasticsearch::Role::Is_Async';
 
 
 sub next_cxn {

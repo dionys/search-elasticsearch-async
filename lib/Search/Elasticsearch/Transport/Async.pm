@@ -42,7 +42,7 @@ sub perform_request {
 				my $err = upgrade_error($@, {request => $pars});
 
 				if ($pool->request_failed($cxn, $err)) {
-					$log->debugf("[%s] %s", $cxn->stringify(), "$err");
+					$log->debugf('[%s] %s', $cxn->stringify(), "$err");
 					$log->info('Retrying request on a new cxn');
 
 					return $self->perform_request($pars, $cb);
