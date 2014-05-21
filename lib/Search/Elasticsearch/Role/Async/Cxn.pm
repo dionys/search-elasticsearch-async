@@ -27,6 +27,33 @@ sub pings_ok {
 			}
 		}
 	);
+
+	return;
+}
+
+sub sniff {
+	my ($self, $cb) = @_;
+
+	$self->logger->infof('Sniffing [%s]', $self->stringify);
+	$self->perform_request(
+		{
+			method  => 'GET',
+			path    => '/_nodes/' . $self->protocol,
+			qs      => {timeout => 1000 * $self->sniff_timeout},
+			timeout => $self->sniff_request_timeout,
+		},
+		sub {
+			if (@_) {
+				$cb->($_[1]->{nodes});
+			}
+			else {
+				$self->logger->debug($@);
+				$cb->();
+			}
+		}
+	);
+
+	return;
 }
 
 
