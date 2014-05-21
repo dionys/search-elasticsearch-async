@@ -47,12 +47,9 @@ sub perform_request {
 }
 
 sub error_from_text {
-	local $_ = $_[2];
-
-	return
-		  /[Tt]imed out/ ?     'Timeout'
-		: /Invalid argument/ ? 'Cxn'
-		:                      'Request';
+	return 'Timeout' if $_[2] =~ /timed out/;
+	return 'Cxn'     if $_[1] >= 590;
+	return 'Request';
 }
 
 
