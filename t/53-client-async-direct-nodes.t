@@ -7,7 +7,7 @@ use Test::More;
 
 
 BEGIN {
-	use_ok 'Search::Elasticsearch::Client::Direct::Async::Indices';
+	use_ok 'Search::Elasticsearch::Client::Async::Direct::Nodes';
 }
 
 

@@ -1,8 +1,6 @@
-package Search::Elasticsearch::Role::Cxn::Async;
+package Search::Elasticsearch::Role::Async::Cxn;
 
 use Moo::Role;
-
-use Scalar::Util qw(blessed);
 
 with 'Search::Elasticsearch::Role::Cxn';
 

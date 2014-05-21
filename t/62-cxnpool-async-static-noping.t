@@ -7,7 +7,7 @@ use Test::More;
 
 
 BEGIN {
-	use_ok 'Search::Elasticsearch::Client::Direct::Async::Cluster';
+	use_ok 'Search::Elasticsearch::CxnPool::Async::Static::NoPing';
 }
 
 

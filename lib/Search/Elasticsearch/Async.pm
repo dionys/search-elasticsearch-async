@@ -15,9 +15,9 @@ sub new {
 	my ($class, $pars) = parse_params(@_);
 
 	return $class->SUPER::new({
-		client              => 'Direct::Async',
+		client              => 'Async::Direct',
 		transport           => 'Async',
-		cxn_pool            => 'Static::Async',
+		cxn_pool            => 'Async::Static',
 		cxn                 => 'AEHTTP',
 		%$pars,
 	});

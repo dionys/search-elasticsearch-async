@@ -1,4 +1,4 @@
-package Search::Elasticsearch::Client::Direct::Async::Cat;
+package Search::Elasticsearch::Client::Async::Direct::Cat;
 
 use Moo;
 
@@ -6,7 +6,7 @@ use Search::Elasticsearch::Util qw(parse_params);
 
 extends 'Search::Elasticsearch::Client::Direct::Cat';
 with    'Search::Elasticsearch::Role::API';
-with    'Search::Elasticsearch::Role::Client::Direct::Async';
+with    'Search::Elasticsearch::Role::Async::Client::Direct';
 
 
 __PACKAGE__->_install_api('cat');

@@ -1,11 +1,11 @@
-package Search::Elasticsearch::Client::Direct::Async;
+package Search::Elasticsearch::Client::Async::Direct;
 
 use Moo;
 
 use Search::Elasticsearch::Util qw(load_plugin);
 
 with    'Search::Elasticsearch::Role::API',
-        'Search::Elasticsearch::Role::Client::Direct::Async',
+        'Search::Elasticsearch::Role::Async::Client::Direct',
         'Search::Elasticsearch::Role::Is_Async';
 extends 'Search::Elasticsearch::Client::Direct';
 

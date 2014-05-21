@@ -1,4 +1,4 @@
-package Search::Elasticsearch::CxnPool::Static::NoPing::Async;
+package Search::Elasticsearch::CxnPool::Async::Static::NoPing;
 
 use Moo;
 

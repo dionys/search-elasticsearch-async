@@ -7,7 +7,7 @@ use Test::More;
 
 
 BEGIN {
-	use_ok 'Search::Elasticsearch::Client::Direct::Async::Cat';
+	use_ok 'Search::Elasticsearch::Client::Async::Direct';
 }
 
 

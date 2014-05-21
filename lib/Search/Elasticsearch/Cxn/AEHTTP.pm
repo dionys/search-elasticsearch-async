@@ -2,7 +2,7 @@ package Search::Elasticsearch::Cxn::AEHTTP;
 
 use Moo;
 
-with 'Search::Elasticsearch::Role::Cxn::Async',
+with 'Search::Elasticsearch::Role::Async::Cxn',
      'Search::Elasticsearch::Role::Cxn::HTTP',
      'Search::Elasticsearch::Role::Is_Async';
 
