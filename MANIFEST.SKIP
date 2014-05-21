@@ -4,3 +4,6 @@
 ^Makefile$
 ^\.git
 cpanfile
+examples
+MANIFEST.SKIP
+tmp

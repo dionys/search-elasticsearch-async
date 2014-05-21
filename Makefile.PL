@@ -21,7 +21,7 @@ WriteMakefile(
 		'AnyEvent::HTTP'        => 0,
 		'Moo'                   => 0,
 		'Package::Stash'        => 0,
-		'Search::Elasticsearch' => 1.10,
+		'Search::Elasticsearch' => '1.10',
 		'Time::HiRes'           => 0,
 	},
 	META_MERGE       => {
