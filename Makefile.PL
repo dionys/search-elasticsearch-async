@@ -14,15 +14,15 @@ WriteMakefile(
 	LICENSE          => 'perl',
 	MIN_PERL_VERSION => '5.8.0',
 	BUILD_REQUIRES   => {
-		'Test::More'                   => 0,
+		'Test::More'            => 0,
 	},
 	PREREQ_PM        => {
-		'namespace::clean'             => 0,
-		'Moo'                          => 0,
-		'Package::Stash'               => 0,
-		'Search::Elasticsearch'        => 1.10,
-		'Search::Elasticsearch::Async' => 1.10,
-		'Time::HiRes'                  => 0,
+		'namespace::clean'      => 0,
+		'AnyEvent::HTTP'        => 0,
+		'Moo'                   => 0,
+		'Package::Stash'        => 0,
+		'Search::Elasticsearch' => 1.10,
+		'Time::HiRes'           => 0,
 	},
 	META_MERGE       => {
 		resources => {
