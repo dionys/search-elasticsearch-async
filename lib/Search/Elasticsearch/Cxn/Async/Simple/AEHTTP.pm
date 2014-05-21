@@ -2,11 +2,13 @@ package Search::Elasticsearch::Cxn::Async::Simple::AEHTTP;
 
 use Moo;
 
+use AnyEvent::HTTP qw(http_request);
+
+use namespace::clean;
+
 with 'Search::Elasticsearch::Role::Cxn::Async::Simple',
      'Search::Elasticsearch::Role::Cxn::HTTP',
      'Search::Elasticsearch::Role::Is_Async';
-
-use AnyEvent::HTTP qw(http_request);
 
 
 sub perform_request {
@@ -54,3 +56,29 @@ sub error_from_text {
 
 
 1;
+
+
+__END__
+
+=head1 NAME
+
+Search::Elasticsearch::Cxn::Async::Simple::AEHTTP - An asynchronous connection implementation which uses AnyEvent::HTTP
+
+=head1 DESCRIPTION
+
+Provides the default asynchronous HTTP connection class and is based on
+L<AnyEvent::HTTP>. The AEHTTP backend is fast, uses pure Perl, support proxies
+and HTTPS and provides persistent connections.
+
+=head1 AUTHOR
+
+Denis Ibaev C<dionys@cpan.org>.
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
+
+See L<http://dev.perl.org/licenses/> for more information.
+
+=cut

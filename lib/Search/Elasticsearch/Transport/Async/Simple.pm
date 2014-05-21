@@ -6,6 +6,8 @@ use Time::HiRes qw(time);
 
 use Search::Elasticsearch::Util qw(upgrade_error);
 
+use namespace::clean;
+
 with 'Search::Elasticsearch::Role::Transport',
      'Search::Elasticsearch::Role::Is_Async';
 
@@ -64,3 +66,27 @@ sub perform_request {
 
 
 1;
+
+
+__END__
+
+=head1 NAME
+
+Search::Elasticsearch::Transport::Async::Simple - Provides asynchronous interface between the client class and the Elasticsearch cluster
+
+=head1 DESCRIPTION
+
+See L<Search::Elasticsearch::Transport> for the main documentation.
+
+=head1 AUTHOR
+
+Denis Ibaev C<dionys@cpan.org>.
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
+
+See L<http://dev.perl.org/licenses/> for more information.
+
+=cut

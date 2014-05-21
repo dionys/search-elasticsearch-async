@@ -1,3 +1,4 @@
+requires 'namespace::clean';
 requires 'Moo';
 requires 'Package::Stash';
 requires 'Search::Elasticsearch'        => 1.10;

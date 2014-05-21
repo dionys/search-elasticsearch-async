@@ -17,6 +17,7 @@ WriteMakefile(
 		'Test::More'                   => 0,
 	},
 	PREREQ_PM        => {
+		'namespace::clean'             => 0,
 		'Moo'                          => 0,
 		'Package::Stash'               => 0,
 		'Search::Elasticsearch'        => 1.10,

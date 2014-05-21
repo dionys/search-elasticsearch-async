@@ -122,3 +122,27 @@ sub sniff_cxn {
 
 
 1;
+
+
+__END__
+
+=head1 NAME
+
+Search::Elasticsearch::CxnPool::Async::Simple::Sniff - An asynchronous connection pool for connecting to a local cluster with a dynamic node list
+
+=head1 DESCRIPTION
+
+See L<Search::Elasticsearch::CxnPool::Sniff> for the main documentation.
+
+=head1 AUTHOR
+
+Denis Ibaev C<dionys@cpan.org>.
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
+
+See L<http://dev.perl.org/licenses/> for more information.
+
+=cut

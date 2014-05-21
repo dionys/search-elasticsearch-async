@@ -57,3 +57,27 @@ sub next_cxn {
 
 
 1;
+
+
+__END__
+
+=head1 NAME
+
+Search::Elasticsearch::CxnPool::Async::Simple::Static - An asynchronous connection pool for connecting to a remote cluster with a static list of nodes
+
+=head1 DESCRIPTION
+
+See L<Search::Elasticsearch::CxnPool::Static> for the main documentation.
+
+=head1 AUTHOR
+
+Denis Ibaev C<dionys@cpan.org>.
+
+=head1 LICENSE
+
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
+
+See L<http://dev.perl.org/licenses/> for more information.
+
+=cut
