@@ -7,7 +7,7 @@ use Test::More;
 
 
 BEGIN {
-	use_ok 'Search::Elasticsearch::CxnPool::Async::Static';
+	use_ok 'Search::Elasticsearch::CxnPool::Async::Simple::Static';
 }
 
 

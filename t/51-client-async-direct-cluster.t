@@ -7,7 +7,7 @@ use Test::More;
 
 
 BEGIN {
-	use_ok 'Search::Elasticsearch::Client::Async::Direct::Cluster';
+	use_ok 'Search::Elasticsearch::Client::Async::Simple::Direct::Cluster';
 }
 
 

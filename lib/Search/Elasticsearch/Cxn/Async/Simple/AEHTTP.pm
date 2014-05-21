@@ -1,8 +1,8 @@
-package Search::Elasticsearch::Cxn::AEHTTP;
+package Search::Elasticsearch::Cxn::Async::Simple::AEHTTP;
 
 use Moo;
 
-with 'Search::Elasticsearch::Role::Async::Cxn',
+with 'Search::Elasticsearch::Role::Cxn::Async::Simple',
      'Search::Elasticsearch::Role::Cxn::HTTP',
      'Search::Elasticsearch::Role::Is_Async';
 

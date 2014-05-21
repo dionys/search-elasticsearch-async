@@ -1,10 +1,10 @@
-package Search::Elasticsearch::Role::Async::Client::Direct;
+package Search::Elasticsearch::Role::Client::Async::Simple::Direct;
 
 use Moo::Role;
 
 use Package::Stash ();
 
-with 'Search::Elasticsearch::Role::Async::Client';
+with 'Search::Elasticsearch::Role::Client::Async::Simple';
 with 'Search::Elasticsearch::Role::Client::Direct';
 
 

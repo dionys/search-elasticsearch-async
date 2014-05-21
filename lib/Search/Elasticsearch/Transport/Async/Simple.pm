@@ -1,4 +1,4 @@
-package Search::Elasticsearch::Transport::Async;
+package Search::Elasticsearch::Transport::Async::Simple;
 
 use Moo;
 

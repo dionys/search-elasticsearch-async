@@ -1,4 +1,4 @@
-package Search::Elasticsearch::CxnPool::Async::Sniff;
+package Search::Elasticsearch::CxnPool::Async::Simple::Sniff;
 
 use Moo;
 

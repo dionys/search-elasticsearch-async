@@ -1,4 +1,4 @@
-package Search::Elasticsearch::Role::Async::Cxn;
+package Search::Elasticsearch::Role::Cxn::Async::Simple;
 
 use Moo::Role;
 

@@ -7,7 +7,7 @@ use Test::More;
 
 
 BEGIN {
-	use_ok 'Search::Elasticsearch::Role::Async::Client';
+	use_ok 'Search::Elasticsearch::Role::Client::Async::Simple';
 }
 
 BEGIN {
@@ -15,7 +15,7 @@ BEGIN {
 
 	use Moo;
 
-	with 'Search::Elasticsearch::Role::Async::Client';
+	with 'Search::Elasticsearch::Role::Client::Async::Simple';
 
 	sub parse_request {}
 }

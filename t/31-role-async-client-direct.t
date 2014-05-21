@@ -7,7 +7,7 @@ use Test::More;
 
 
 BEGIN {
-	use_ok 'Search::Elasticsearch::Role::Async::Client::Direct';
+	use_ok 'Search::Elasticsearch::Role::Client::Async::Simple::Direct';
 }
 
 BEGIN {
@@ -15,14 +15,14 @@ BEGIN {
 
 	use Moo;
 
-	with 'Search::Elasticsearch::Role::Async::Client::Direct';
+	with 'Search::Elasticsearch::Role::Client::Async::Simple::Direct';
 }
 
 ok (My::Client->can('_install_api'));
-is exporter('My::Client::_install_api'), 'Search::Elasticsearch::Role::Async::Client::Direct';
+is exporter('My::Client::_install_api'), 'Search::Elasticsearch::Role::Client::Async::Simple::Direct';
 
 ok (My::Client->can('perform_request'));
-is exporter('My::Client::perform_request'), 'Search::Elasticsearch::Role::Async::Client';
+is exporter('My::Client::perform_request'), 'Search::Elasticsearch::Role::Client::Async::Simple';
 
 
 done_testing;
