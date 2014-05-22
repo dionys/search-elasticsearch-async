@@ -24,14 +24,6 @@ sub new {
 }
 
 
-package
-	Search::Elasticsearch::Role::Is_Async;
-
-use Moo::Role;
-
-use namespace::clean;
-
-
 1;
 
 

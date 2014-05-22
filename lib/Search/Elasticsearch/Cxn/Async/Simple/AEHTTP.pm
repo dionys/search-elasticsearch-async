@@ -4,6 +4,8 @@ use Moo;
 
 use AnyEvent::HTTP qw(http_request);
 
+use Search::Elasticsearch::Role::Is_Async::Loader ();
+
 use namespace::clean;
 
 with 'Search::Elasticsearch::Role::Cxn::Async::Simple',

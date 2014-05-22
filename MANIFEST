@@ -13,10 +13,14 @@ lib/Search/Elasticsearch/CxnPool/Async/Simple/Static/NoPing.pm
 lib/Search/Elasticsearch/Role/Cxn/Async/Simple.pm
 lib/Search/Elasticsearch/Role/Client/Async/Simple.pm
 lib/Search/Elasticsearch/Role/Client/Async/Simple/Direct.pm
+lib/Search/Elasticsearch/Role/Is_Async/Fake.pm
+lib/Search/Elasticsearch/Role/Is_Async/Loader.pm
 lib/Search/Elasticsearch/Transport/Async/Simple.pm
 Makefile.PL
 MANIFEST
 README
+t/10-role-isasync-fake.t
+t/11-role-isasync-loader.t
 t/30-role-async-client.t
 t/31-role-async-client-direct.t
 t/40-client-async-direct.t
