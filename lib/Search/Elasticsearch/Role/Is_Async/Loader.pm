@@ -8,6 +8,8 @@ use strictures;
 
 use Module::Runtime qw(require_module);
 
+use namespace::clean;
+
 
 BEGIN {
 	eval {

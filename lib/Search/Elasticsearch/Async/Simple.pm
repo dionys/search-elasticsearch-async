@@ -5,6 +5,8 @@ use Moo;
 use Search::Elasticsearch 1.10;
 use Search::Elasticsearch::Util qw(parse_params);
 
+use namespace::clean;
+
 extends 'Search::Elasticsearch';
 
 
