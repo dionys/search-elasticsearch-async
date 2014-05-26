@@ -3,6 +3,7 @@ Revision history for Search::Elasticsearch::Async::Simple
 0.03
         - Improved support of Search::Elasticsearch::Role::Is_Async role if
           Search::Elasticsearch::Async not installed.
+        - Improved tests.
 
 0.02    2014-05-22
         - Fixed failed tests.
