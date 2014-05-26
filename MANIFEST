@@ -21,8 +21,8 @@ MANIFEST
 README
 t/10-role-isasync-fake.t
 t/11-role-isasync-loader.t
-t/30-role-async-client.t
-t/31-role-async-client-direct.t
+t/12-role-client.t
+t/13-role-client-direct.t
 t/40-client-async-direct.t
 t/50-client-async-direct-cat.t
 t/51-client-async-direct-cluster.t
