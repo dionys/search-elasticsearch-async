@@ -39,11 +39,7 @@ sub perform_request {
 					$_[1],
 				);
 			};
-
-			return $cb->($code, $res) unless $@;
-
-			$self->logger->error($@);
-			$cb->();
+			$cb->($@ ? () : ($code, $res));
 		}
 	);
 
