@@ -14,12 +14,12 @@ WriteMakefile(
 	LICENSE          => 'perl',
 	MIN_PERL_VERSION => '5.8.0',
 	BUILD_REQUIRES   => {
-		'Module::Require'       => 0,
 		'Test::More'            => 0,
 	},
 	PREREQ_PM        => {
 		'namespace::clean'      => 0,
 		'AnyEvent::HTTP'        => 0,
+		'Module::Runtime'       => 0,
 		'Moo'                   => 0,
 		'Package::Stash'        => 0,
 		'Search::Elasticsearch' => '1.10',
