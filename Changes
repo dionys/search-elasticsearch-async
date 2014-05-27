@@ -1,6 +1,6 @@
 Revision history for Search::Elasticsearch::Async::Simple
 
-0.03
+0.03    2014-05-27
         - Improved support of Search::Elasticsearch::Role::Is_Async role if
           Search::Elasticsearch::Async not installed.
         - Improved namespace detecting for components in constructor, no
