@@ -5,6 +5,7 @@ Revision history for Search::Elasticsearch::Async::Simple
           Search::Elasticsearch::Async not installed.
         - Improved namespace detecting for components in constructor, no
           difference with synchronous version now.
+        - Added examples.
         - Improved tests.
         - Fixed some logging.
 

@@ -1,4 +1,7 @@
 Changes
+examples/future.pl
+examples/anyevent.pl
+examples/promises.pl
 lib/Search/Elasticsearch/Async/Simple.pm
 lib/Search/Elasticsearch/Client/Async/Simple/Direct.pm
 lib/Search/Elasticsearch/Client/Async/Simple/Direct/Cat.pm
