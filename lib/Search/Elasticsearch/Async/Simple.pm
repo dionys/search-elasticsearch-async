@@ -81,7 +81,7 @@ function. This function will be called after the response will be received.
 
 =head1 SEE ALSO
 
-L<Search::Elasticsearch>.
+L<Search::Elasticsearch>, L<Search::Elasticsearch::Async>.
 
 =head1 SUPPORT
 

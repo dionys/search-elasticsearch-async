@@ -9,6 +9,13 @@ Search::Elasticsearch::Async::Simple is the unofficial asynchronous Perl client
 for Elasticsearch. Unlike the official Search::Elasticsearch::Async module,
 it does not use any library to provide asynchronous interface, only callbacks.
 
+The official Perl clients for Elasticsearch are:
+
+    Search::Elasticsearch
+        http://metacpan.org/release/Search-Elasticsearch
+    Search::Elasticsearch::Async
+        http://metacpan.org/release/Search-Elasticsearch-Async
+
 INSTALLATION
 
 To install this module, run the following commands:
