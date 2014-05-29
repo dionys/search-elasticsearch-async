@@ -19,8 +19,8 @@ WriteMakefile(
 	PREREQ_PM        => {
 		'namespace::clean'      => 0,
 		'AnyEvent::HTTP'        => 0,
-		'Module::Runtime'       => 0,
-		'Moo'                   => 0,
+		'Module::Runtime'       => '0.012',
+		'Moo'                   => '1.004000',
 		'Package::Stash'        => 0,
 		'Search::Elasticsearch' => '1.10',
 		'Time::HiRes'           => 0,
