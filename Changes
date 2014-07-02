@@ -1,5 +1,9 @@
 Revision history for Search::Elasticsearch::Async::Simple
 
+0.04    0000-00-00
+        - Fixed loading of fake Search::Elasticsearch::Role::Is_Async role with
+          Moo < 1.004000.
+
 0.03    2014-05-27
         - Improved support of Search::Elasticsearch::Role::Is_Async role if
           Search::Elasticsearch::Async not installed.

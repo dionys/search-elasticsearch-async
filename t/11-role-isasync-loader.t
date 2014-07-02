@@ -12,16 +12,16 @@ BEGIN {
 	use_ok 'Search::Elasticsearch::Role::Is_Async::Loader';
 }
 
-my $name = module_notional_filename('Search::Elasticsearch::Role::Is_Async');
+my $file = module_notional_filename('Search::Elasticsearch::Role::Is_Async');
 
-ok exists($INC{$name});
+ok exists($INC{$file});
 
 my $orig = eval { require_module('Search::Elasticsearch::Async'); };
 
 diag 'Search::Elasticsearch::Async ' . ($orig ? $Search::Elasticsearch::Async::VERSION : 'not') . ' installed';
 
-like $INC{$name}, qr/Is_Async\.pm$/ if $orig;
-like $INC{$name}, qr/Fake\.pm$/ unless $orig;
+like $INC{$file}, qr/Is_Async\.pm$/ if $orig;
+like $INC{$file}, qr/Fake\.pm$/ unless $orig;
 
 
 done_testing;
