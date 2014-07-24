@@ -24,11 +24,11 @@ sub new {
 		$pars->{$_} = 'Async::Simple::' . $pars->{$_};
 	}
 
-	return $class->SUPER::new({
-		client              => 'Async::Simple::Direct',
-		transport           => 'Async::Simple',
-		cxn_pool            => 'Async::Simple::Static',
-		cxn                 => 'Async::Simple::AEHTTP',
+	return $class->next::method({
+		client    => 'Async::Simple::Direct',
+		transport => 'Async::Simple',
+		cxn_pool  => 'Async::Simple::Static',
+		cxn       => 'Async::Simple::AEHTTP',
 		%$pars,
 	});
 }

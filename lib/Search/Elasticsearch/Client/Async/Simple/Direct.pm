@@ -3,7 +3,7 @@ package Search::Elasticsearch::Client::Async::Simple::Direct;
 use Moo;
 
 use Search::Elasticsearch::Role::Is_Async::Loader ();
-use Search::Elasticsearch::Util qw(load_plugin);
+use Search::Elasticsearch::Util qw(load_plugin parse_params);
 
 use namespace::clean;
 
@@ -15,6 +15,41 @@ extends 'Search::Elasticsearch::Client::Direct';
 
 __PACKAGE__->_install_api('');
 
+
+sub create {
+	my $cb = pop();
+	my ($self, $pars) = parse_params(@_);
+
+	$pars->{op_type} = 'create';
+
+	$self->_index('create', $pars, $cb);
+
+	return;
+
+}
+
+sub index {
+	my $cb = pop();
+	my ($self, $pars) = parse_params(@_);
+
+	$self->_index('index', $pars, $cb);
+
+	return;
+}
+
+sub _index {
+	my ($self, $name, $pars, $cb) = @_;
+
+	my $defn = $self->api->{index};
+
+	unless (defined($pars->{id}) and length($pars->{id})) {
+		$defn = {%$defn, method => 'POST'};
+	}
+
+	$self->perform_request({%$defn, name => $name}, $pars, $cb);
+
+	return;
+}
 
 sub _build_namespace {
 	my ($self, $ns) = @_;
