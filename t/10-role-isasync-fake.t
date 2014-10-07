@@ -6,13 +6,14 @@ use warnings;
 use Test::More;
 
 use Module::Runtime qw(module_notional_filename);
+use Role::Tiny ();
 
 
 BEGIN {
 	use_ok 'Search::Elasticsearch::Role::Is_Async::Fake';
 }
 
-ok exists($INC{module_notional_filename('Search::Elasticsearch::Role::Is_Async')});
+ok !!Role::Tiny->is_role('Search::Elasticsearch::Role::Is_Async');
 
 
 done_testing;
