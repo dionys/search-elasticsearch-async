@@ -3,6 +3,7 @@ examples/future.pl
 examples/anyevent.pl
 examples/promises.pl
 lib/Search/Elasticsearch/Async/Simple.pm
+lib/Search/Elasticsearch/Async/Simple/Util.pm
 lib/Search/Elasticsearch/Client/Async/Simple/Direct.pm
 lib/Search/Elasticsearch/Client/Async/Simple/Direct/Cat.pm
 lib/Search/Elasticsearch/Client/Async/Simple/Direct/Cluster.pm
@@ -22,6 +23,7 @@ lib/Search/Elasticsearch/Transport/Async/Simple.pm
 Makefile.PL
 MANIFEST
 README
+t/00-util.t
 t/10-role-isasync-fake.t
 t/11-role-isasync-loader.t
 t/12-role-client.t
