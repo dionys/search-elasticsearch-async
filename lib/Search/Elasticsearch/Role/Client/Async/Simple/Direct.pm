@@ -10,6 +10,14 @@ with 'Search::Elasticsearch::Role::Client::Async::Simple';
 with 'Search::Elasticsearch::Role::Client::Direct';
 
 
+around parse_request => sub {
+	my $meth = shift();
+	my $req  = eval { $meth->(@_); };
+
+	return $req unless $@;
+	return;
+};
+
 sub _install_api {
 	my ($cls, $grp) = @_;
 

@@ -14,6 +14,7 @@ WriteMakefile(
 	LICENSE          => 'perl',
 	MIN_PERL_VERSION => '5.8.0',
 	BUILD_REQUIRES   => {
+		'B'                     => 0,
 		'Test::More'            => 0,
 	},
 	PREREQ_PM        => {
