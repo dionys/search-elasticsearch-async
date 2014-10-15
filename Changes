@@ -4,6 +4,8 @@ Revision history for Search::Elasticsearch::Async::Simple
         - Fixed loading of fake Search::Elasticsearch::Role::Is_Async role with
           Moo < 1.004000.
         - Fixed processing of arguments in some API methods.
+        - Fixed error processing in some API methods.
+        - Added more tests.
 
 0.03    2014-05-27
         - Improved support of Search::Elasticsearch::Role::Is_Async role if

@@ -28,6 +28,7 @@ t/10-role-isasync-fake.t
 t/11-role-isasync-loader.t
 t/12-role-client.t
 t/13-role-client-direct.t
+t/14-role-cxn.t
 t/20-cxn-aehttp.t
 t/30-cxnpool-static.t
 t/31-cxnpool-static-noping.t
