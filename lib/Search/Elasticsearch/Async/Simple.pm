@@ -1,7 +1,5 @@
 package Search::Elasticsearch::Async::Simple;
 
-use Moo;
-
 use Search::Elasticsearch 1.20;
 use Search::Elasticsearch::Util qw(parse_params);
 
@@ -24,7 +22,7 @@ sub new {
 		$pars->{$_} = 'Async::Simple::' . $pars->{$_};
 	}
 
-	return $class->next::method({
+	return $class->SUPER::new({
 		client    => 'Async::Simple::1_0::Direct',
 		transport => 'Async::Simple',
 		cxn_pool  => 'Async::Simple::Static',
