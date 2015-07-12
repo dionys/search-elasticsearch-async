@@ -1,4 +1,4 @@
-package Search::Elasticsearch::Client::Async::Simple::Direct;
+package Search::Elasticsearch::Client::Async::Simple::1_0::Direct;
 
 use Moo;
 
@@ -7,10 +7,10 @@ use Search::Elasticsearch::Util qw(load_plugin parse_params);
 
 use namespace::clean;
 
-with    'Search::Elasticsearch::Role::API',
+with    'Search::Elasticsearch::Role::API::1_0',
         'Search::Elasticsearch::Role::Client::Async::Simple::Direct',
         'Search::Elasticsearch::Role::Is_Async';
-extends 'Search::Elasticsearch::Client::Direct';
+extends 'Search::Elasticsearch::Client::1_0::Direct';
 
 
 __PACKAGE__->_install_api('');

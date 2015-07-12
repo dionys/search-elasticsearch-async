@@ -7,7 +7,7 @@ use Test::More;
 
 
 BEGIN {
-	use_ok 'Search::Elasticsearch::Client::Async::Simple::Direct';
+	use_ok 'Search::Elasticsearch::Client::Async::Simple::1_0::Direct';
 }
 
 BEGIN {
@@ -24,7 +24,7 @@ BEGIN {
 	}
 }
 
-my $obj = Search::Elasticsearch::Client::Async::Simple::Direct->new(
+my $obj = Search::Elasticsearch::Client::Async::Simple::1_0::Direct->new(
 	logger    => undef,
 	transport => Local::Transport->new,
 );

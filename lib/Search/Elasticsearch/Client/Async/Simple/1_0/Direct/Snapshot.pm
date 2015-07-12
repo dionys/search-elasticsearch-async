@@ -1,11 +1,11 @@
-package Search::Elasticsearch::Client::Async::Simple::Direct::Snapshot;
+package Search::Elasticsearch::Client::Async::Simple::1_0::Direct::Snapshot;
 
 use Moo;
 
 use namespace::clean;
 
-extends 'Search::Elasticsearch::Client::Direct::Snapshot';
-with    'Search::Elasticsearch::Role::API';
+extends 'Search::Elasticsearch::Client::1_0::Direct::Snapshot';
+with    'Search::Elasticsearch::Role::API::1_0';
 with    'Search::Elasticsearch::Role::Client::Async::Simple::Direct';
 
 

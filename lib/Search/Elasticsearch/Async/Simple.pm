@@ -2,12 +2,12 @@ package Search::Elasticsearch::Async::Simple;
 
 use Moo;
 
-use Search::Elasticsearch 1.10;
+use Search::Elasticsearch 1.20;
 use Search::Elasticsearch::Util qw(parse_params);
 
 use namespace::clean;
 
-extends 'Search::Elasticsearch';
+use parent 'Search::Elasticsearch';
 
 
 our $VERSION = '0.03';
@@ -25,7 +25,7 @@ sub new {
 	}
 
 	return $class->next::method({
-		client    => 'Async::Simple::Direct',
+		client    => 'Async::Simple::1_0::Direct',
 		transport => 'Async::Simple',
 		cxn_pool  => 'Async::Simple::Static',
 		cxn       => 'Async::Simple::AEHTTP',

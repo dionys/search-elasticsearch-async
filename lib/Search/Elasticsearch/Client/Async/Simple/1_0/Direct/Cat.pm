@@ -1,4 +1,4 @@
-package Search::Elasticsearch::Client::Async::Simple::Direct::Cat;
+package Search::Elasticsearch::Client::Async::Simple::1_0::Direct::Cat;
 
 use Moo;
 
@@ -6,8 +6,8 @@ use Search::Elasticsearch::Util qw(parse_params);
 
 use namespace::clean;
 
-extends 'Search::Elasticsearch::Client::Direct::Cat';
-with    'Search::Elasticsearch::Role::API';
+extends 'Search::Elasticsearch::Client::1_0::Direct::Cat';
+with    'Search::Elasticsearch::Role::API::1_0';
 with    'Search::Elasticsearch::Role::Client::Async::Simple::Direct';
 
 
